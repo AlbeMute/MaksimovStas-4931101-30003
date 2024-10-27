@@ -11,5 +11,5 @@ for _ in range(months):
     money_capital += current_spend - salary
     current_spend *= (1 + increase)
 
-money_capital = int(money_capital)
+money_capital = ((money_capital + 99) // 100) * 100 # Округлит в большую сторону до 100
 print(f"Подушка безопасности, чтобы протянуть {months} месяцев без долгов:", money_capital)
